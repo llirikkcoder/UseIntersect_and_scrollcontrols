@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import React, { useRef } from 'react'
+import React, { useRef,  Suspense } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
 import Navbar from './components/Nav/Navbar'
@@ -258,7 +258,7 @@ class Paintings extends React.Component {
 }
 
 const CoolScroll = () => (
-
+<Suspense fallback={null}>
     <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
       <color attach="background" args={['#f0f0f0']} />
       <ScrollControls damping={6} pages={5}>
@@ -276,6 +276,7 @@ const CoolScroll = () => (
         </Scroll>
       </ScrollControls>
     </Canvas>
+    </Suspense>
 
 )
 

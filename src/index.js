@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { Suspense } from 'react'
+
 import { Logo } from '@pmndrs/branding'
 import './styles.css'
 import { App } from './App'
@@ -24,11 +24,6 @@ const rootElement = document.getElementById("root");
 
 createRoot(document.getElementById('root')).render(
   <Router history={history}>
-    <Suspense fallback={null}>
-      
-      <App />
-    </Suspense>
-    {/* <Overlay /> */}
-    {/* <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} /> */}
-    </Router>
+    <App />
+  </Router>
 )
