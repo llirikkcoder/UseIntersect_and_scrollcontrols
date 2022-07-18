@@ -25,7 +25,6 @@ const rootElement = document.getElementById("root");
 createRoot(document.getElementById('root')).render(
   <Router history={history}>
     <Suspense fallback={null}>
-      
       <App />
     </Suspense>
     {/* <Overlay /> */}

@@ -3,7 +3,8 @@ import React, { useRef } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
 import Navbar from './components/Nav/Navbar'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+// import { HashRouter, Route, Routes } from 'react-router-dom'
+import MainPage from "./MainPage";
 
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
@@ -282,7 +283,7 @@ const CoolScroll = () => (
 export const App = () => (
   <>
     <Navbar />
-
+    {/* <MainPage /> */}
     <CoolScroll />
   </>
 )

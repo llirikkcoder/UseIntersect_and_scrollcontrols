@@ -1567,6 +1567,13 @@
   resolved "https://registry.yarnpkg.com/@pmndrs/branding/-/branding-0.0.8.tgz#1ebdafdfe03fa2a394fc038313f083a9a4d15186"
   integrity sha512-AIWJJDiUhIWNJqhN+bz1FIlQRURqQDIaJ2FokEIHAJ/k0XIYI6VM5UgVBRupS4YkMXtvdBAYnfsDpFx8C7N4Xw==
 
+"@react-pdf/yoga@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@react-pdf/yoga/-/yoga-2.0.4.tgz#6b14c6f244dc551db209acd05a06354a19fed66e"
+  integrity sha512-bsU48GQ8E4LEQ38AtyQPQZ9oEATMpolGPFewgI4sBXOZBNH2miLtoBTbyB/xEOMuBcyqtvJQwSNg2czSZjrlyQ==
+  dependencies:
+    "@types/yoga-layout" "^1.9.3"
+
 "@react-spring/animated@~9.5.0":
   version "9.5.0"
   resolved "https://registry.yarnpkg.com/@react-spring/animated/-/animated-9.5.0.tgz#bedc9301ec81a29331327aa25e37125a94080f48"
@@ -1649,6 +1656,14 @@
     scheduler "^0.21.0"
     suspend-react "^0.0.8"
     zustand "^3.7.1"
+
+"@react-three/flex@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@react-three/flex/-/flex-1.0.0.tgz#53bcdd5b0ad712e865ffd6a088eca10c13294416"
+  integrity sha512-6Ti01VYdzMiBJv2pDowiOFt9N/AiuGFiLlnzbBHnuuM7FV+yjicy1OTkHHPxiL1Dda6mp84i7eLYhWCAMs5sTw==
+  dependencies:
+    "@react-pdf/yoga" "^2.0.4"
+    react-merge-refs "^1.1.0"
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -2130,6 +2145,11 @@
   integrity sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@types/yoga-layout@^1.9.3":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@types/yoga-layout/-/yoga-layout-1.9.4.tgz#fad54fef623464dacd9e765d854f0e76ff1184f7"
+  integrity sha512-RRHc1+8Hc5mf/2lZKnom6kCnqcNS07s8keahniWTOva0KELF6RgDJmaEcvGEKUUJgN4UgessmEsWuidaOycIOw==
 
 "@typescript-eslint/eslint-plugin@^5.5.0":
   version "5.30.6"
