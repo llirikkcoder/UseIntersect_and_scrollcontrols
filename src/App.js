@@ -257,9 +257,7 @@ class Paintings extends React.Component {
   }
 }
 
-export const App = () => (
-  <>
-    <Navbar />
+const CoolScroll = () => (
 
     <Canvas orthographic camera={{ zoom: 80 }} gl={{ alpha: false, antialias: false, stencil: false, depth: false }} dpr={[1, 1.5]}>
       <color attach="background" args={['#f0f0f0']} />
@@ -278,5 +276,13 @@ export const App = () => (
         </Scroll>
       </ScrollControls>
     </Canvas>
+
+)
+
+export const App = () => (
+  <>
+    <Navbar />
+
+    <CoolScroll />
   </>
 )
