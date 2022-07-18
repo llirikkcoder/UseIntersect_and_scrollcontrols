@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <Nav >
       <div className="logo">
-        <Link to="/">medialounge24</Link>
+        <Link to="/">МЕДИАЛАУНЖ24</Link>
       </div>
       <Burger />
     </Nav>

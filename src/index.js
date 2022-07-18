@@ -4,7 +4,7 @@ import { Logo } from '@pmndrs/branding'
 import './styles.css'
 import { App } from './App'
 import history from "./history";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 function Overlay() {
@@ -23,7 +23,7 @@ function Overlay() {
 const rootElement = document.getElementById("root");
 
 createRoot(document.getElementById('root')).render(
-  <Router history={history}>
+  // <Router history={history}>
     <App />
-  </Router>
+  // </Router>
 )

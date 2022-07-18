@@ -3,7 +3,8 @@ import React, { useRef,  Suspense } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei'
 import Navbar from './components/Nav/Navbar'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import PageWithModels from './PageWithModels'
+import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
 
 function Item({ url, scale, ...props }) {
   const visible = useRef(false)
@@ -280,10 +281,26 @@ const CoolScroll = () => (
 
 )
 
-export const App = () => (
-  <>
-    <Navbar />
+function Space() {
+  return <p>Discover our numerous opportunities</p>;
+}
 
-    <CoolScroll />
-  </>
+function Solutions() {
+  return <p>Solutions that help you.</p>;
+}
+
+function Contact() {
+  return <p>Feel free to reach us.</p>;
+}
+
+export const App = () => (
+  <Router history={history}>
+    <Navbar />
+    <Routes>
+      <Route exact path="/" element={<CoolScroll />} />
+    </Routes>
+    <Routes>
+      <Route exact path="/space" element={<PageWithModels />} />
+    </Routes>
+  </Router>
 )
