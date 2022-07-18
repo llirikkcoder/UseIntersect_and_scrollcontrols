@@ -30,5 +30,5 @@ createRoot(document.getElementById('root')).render(
     </Suspense>
     {/* <Overlay /> */}
     {/* <Logo style={{ position: 'absolute', top: 40, left: 40, width: 30 }} /> */}
-    </Router>,rootElement
+    </Router>
 )
